@@ -8,6 +8,8 @@
   </view>
 </view>
 
-<button   bindtap="information" >个人档案信息</button>
-<button   bindtap="advice" >意见反馈</button>
-<button   bindtap="about_us"  >关于xx</button>
+<view class="BtnView">
+  <button bindtap="information" >个人档案信息</button>
+  <button bindtap="advice" >意见反馈</button>
+  <button bindtap="about_us"  >关于我们</button>
+</view>

@@ -1,1 +1,17 @@
 /* pages/user_infrom.wxss */
+
+/*按钮*/
+.BtnView { 
+  width: 100%; 
+  height: auto; 
+  /* background-color:#DCDCDC; */
+  margin-top: 0px; 
+  margin-bottom: 0px; 
+  padding-bottom: 0px; 
+ } 
+  
+ .Btn { 
+  width: 90%; 
+  margin-top: 40px; 
+  border-radius:10px;
+ }
