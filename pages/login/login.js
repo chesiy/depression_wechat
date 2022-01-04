@@ -14,53 +14,15 @@ Page({
     uid:''
   },
   
-  login: function (){
-    //this.data.button_disabled=true
-    if(this.data.input_name==''){
-      wx.showToast({
-        title: '账号不能为空',
-        icon: 'none',
-        duration: 1500
-      })
-    }else{
-      if(this.data.input_password==''){
-        wx.showToast({
-          title: '密码不能为空',
-          icon: 'none',
-          duration: 1500
-        })
-      }else{
-        wx.request({
-          url: 'http://127.0.0.1:5000/login_SimNow',
-          data: {input_name:this.data.input_name, input_password:this.data.input_password },
-          method:'POST',
-          success:function(res){
-            console.log(res);
-            if (res.data.info=='登陆成功'){
-              wx.setStorage({
-                key: 'user',
-                data: {'user':res.data.input_name }
-              })
-              wx.showToast({
-                title: '登陆成功', // 标题
-                icon: 'success',  // 图标类型，默认success
-                duration: 1000  // 提示窗停留时间，默认1500ms
-              })
-              wx.navigateTo({
-                url: '/pages/start_make_strategy/start_make_strategy'
-              })
-            }
-            else{
-              wx.showToast({
-                title: res.data.info,
-                icon: 'none',
-                duration: 1500
-              })
-            }
-          }
-        })
-      }
-    }
+  start_dialog: function(){
+    this.data.button_disabled=true
+    wx.navigateTo({
+      url: '/pages/dialog/dialog'
+    })
+  },
+ 
+  user_info: function(){
+    
   },
 
   bindKeyInput_name: function (e) {
@@ -100,7 +62,7 @@ Page({
                                 // 或者可以直接使用微信的提供的接口直接获取 openid ，方法如下：
                                 var obj = {};
                                 wx.request({
-                                  url: 'https://api.weixin.qq.com/sns/jscode2session?appid=' + 'wx52807fdd9335868e' + '&secret=' + '7cb96977e965d9059124d396239a6dc2' + '&js_code=' + res.code + '&grant_type=authorization_code',
+                                  url: 'https://api.weixin.qq.com/sns/jscode2session?appid=' + 'wx2a07d41a6cf8517a' + '&secret=' + '55110e669089591cf3cd48cba081c0a5' + '&js_code=' + res.code + '&grant_type=authorization_code',
                                   data: {},
                                   method: 'GET', // OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT  
                                   // header: {}, // 设置请求的 header  
@@ -118,16 +80,10 @@ Page({
                                       method:'POST',
                                       success: res => {
                                           console.log("用户的openid:" + res.data.openid);
-                                          if (res.data.authority=='1'){
-                                           wx.navigateTo({
-                                             url: '/pages/administer/start/start'
-                                           })
-                                          }
                                       }
                                   });
                                   }
                                 });
-                               
                             }
                         });
                     }
