@@ -1,0 +1,4 @@
+<!--pages/information/information.wxml-->
+<text>pages/information/information.wxml</text>
+<button   bindtap="edit" >修改</button>
+<button   bindtap="save"  >保存</button>

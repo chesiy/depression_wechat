@@ -1,0 +1,13 @@
+<!--pages/user_infrom.wxml-->
+<view>
+  <view>
+    <open-data type="userAvatarUrl"></open-data>
+  </view>
+  <view>
+    <open-data type="userNickName"></open-data> 
+  </view>
+</view>
+
+<button   bindtap="information" >个人档案信息</button>
+<button   bindtap="advice" >意见反馈</button>
+<button   bindtap="about_us"  >关于xx</button>
