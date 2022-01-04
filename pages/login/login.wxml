@@ -1,0 +1,44 @@
+<!--pages/login/login.wxml-->
+<!--pages/administer/start/start.wxml-->
+<view wx:if="{{isHide}}">
+    <view class='header'>
+    </view>
+    <view class='content'>
+        <view>申请获取以下权限</view>
+        <text>获得你的公开信息(昵称，头像等)</text>
+    </view>
+    <!-- <button class='bottom' type='primary' @getuserinfo="bindGetUserInfo" hover-class="none"> -->
+    <button class='bottom' type='primary' open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="bindGetUserInfo">
+        授权登录
+    </button>
+</view>
+ 
+<view wx:else>
+  <view class="container" >
+    <!-- <view class="login-icon"> 
+      <image class="login-img" src="../../img/loginLog.jpg"></image> 
+    </view>  -->
+    <view class="login-from">
+      <view class='title'>请登录simNow账号</view>
+      <view>
+        <!--账号-->
+        <view class="inputView"> 
+          <image class="nameImage" src="../../static/image/login_username.png"></image> 
+          <label class="loginLab">账号</label> 
+          <input class="inputText" auto-focus placeholder="请输入账号"  bindinput="bindKeyInput_name" value='{{id}}'/>
+        </view> 
+        <view class="line"></view>
+        <!--密码-->
+        <view class="inputView"> 
+          <image class="keyImage" src="../../static/image/login_password.png"></image> 
+          <label class="loginLab">密码</label> 
+          <input class="inputText" auto-focus placeholder="请输入密码"  bindinput="bindKeyInput_password" password="true" value='{{password}}'/>
+        </view>
+        
+        <view class="loginBtnView"> 
+          <button class='loginBtn' type="primary" bindtap="login"  disabled="{{button_disabled}}" >登录</button>
+        </view>
+      </view>  
+    </view>
+  </view> 
+</view>
