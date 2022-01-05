@@ -1,2 +1,2 @@
 <!--pages/dialog.wxml-->
-<text>pages/dialog.wxml</text>
+<web-view scr="https://yyz.labdoc.cn:7780/index.html" />
