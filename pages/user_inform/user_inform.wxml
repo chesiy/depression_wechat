@@ -1,12 +1,15 @@
 <!--pages/user_infrom.wxml-->
-<view>
-  <view class="user_portrait">
+<view class="user_portrait">
+  <view class="user_fig">
     <open-data type="userAvatarUrl"></open-data>
   </view>
-  <view>
-    <open-data type="userNickName"></open-data> 
-  </view>
 </view>
+
+<view class="user_portrait">
+    <label>昵称:</label>
+    <open-data type="userNickName"></open-data> 
+</view>
+
 
 <view class="BtnView">
   <button bindtap="information" >个人档案信息</button>

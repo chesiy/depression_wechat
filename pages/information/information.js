@@ -8,6 +8,7 @@ Page({
     isInput:false,
     age:'0',
     gender:'男',
+    profession:'学生',
   },
 
   AgeInput: function (e) {
@@ -24,6 +25,12 @@ Page({
     })
   },
 
+  ProfessionInput: function(e) {
+    this.setData({
+      profession: e.detail.value
+    })
+  },
+
   edit:function(){
     this.setData({
       isInput: true
@@ -36,6 +43,9 @@ Page({
     }
     if( this.data.age==''){
       this.data.gender='男'
+    }
+    if( this.data.profession==''){
+      this.data.profession='学生'
     }
     this.setData({
       isInput: false
