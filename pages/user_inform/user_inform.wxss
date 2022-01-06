@@ -1,5 +1,17 @@
 /* pages/user_infrom.wxss */
 
+page{ 
+  height: 100%; 
+ } 
+
+ .user_portrait{
+  width: 20%; 
+  margin-top: 10px; 
+  margin-left: 10px; 
+  border-radius: 10px;
+  align-items: center;
+}
+
 /*按钮*/
 .BtnView { 
   width: 100%; 

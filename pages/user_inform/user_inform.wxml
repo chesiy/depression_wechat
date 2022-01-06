@@ -1,6 +1,6 @@
 <!--pages/user_infrom.wxml-->
 <view>
-  <view>
+  <view class="user_portrait">
     <open-data type="userAvatarUrl"></open-data>
   </view>
   <view>
@@ -11,5 +11,5 @@
 <view class="BtnView">
   <button bindtap="information" >个人档案信息</button>
   <button bindtap="advice" >意见反馈</button>
-  <button bindtap="about_us"  >关于我们</button>
+  <button bindtap="about_us">关于我们</button>
 </view>
