@@ -5,7 +5,42 @@ Page({
    * 页面的初始数据
    */
   data: {
+    isInput:false,
+    age:'0',
+    gender:'男',
+  },
 
+  AgeInput: function (e) {
+    //print(this.data.age);
+    this.setData({
+      age: e.detail.value
+    })
+  },
+
+  GenderInput: function (e) {
+    //print(this.data.age);
+    this.setData({
+      gender: e.detail.value
+    })
+  },
+
+  edit:function(){
+    this.setData({
+      isInput: true
+    })
+  },
+
+  save:function(){
+    if( this.data.age==''){
+      this.data.age='0'
+    }
+    if( this.data.age==''){
+      this.data.gender='男'
+    }
+    this.setData({
+      isInput: false
+    })
+    //post信息至后台
   },
 
   /**
