@@ -1,56 +1,11 @@
-// pages/information/information.js
+// pages/information/user_protocol.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    isInput:false,
-    age:'0',
-    gender:'男',
-    profession:'学生',
-  },
 
-  AgeInput: function (e) {
-    //print(this.data.age);
-    this.setData({
-      age: e.detail.value
-    })
-  },
-
-  GenderInput: function (e) {
-    //print(this.data.age);
-    this.setData({
-      gender: e.detail.value
-    })
-  },
-
-  ProfessionInput: function(e) {
-    this.setData({
-      profession: e.detail.value
-    })
-  },
-
-  edit:function(){
-    this.setData({
-      isInput: true
-    })
-  },
-
-  save:function(){
-    if( this.data.age==''){
-      this.data.age='0'
-    }
-    if( this.data.age==''){
-      this.data.gender='男'
-    }
-    if( this.data.profession==''){
-      this.data.profession='学生'
-    }
-    this.setData({
-      isInput: false
-    })
-    //post信息至后台
   },
 
   /**

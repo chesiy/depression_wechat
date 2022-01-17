@@ -1,1 +1,6 @@
 /* pages/about_us/about_us.wxss */
+.title {
+  margin: 10px;
+  font-size: 15pt;
+  color: #2b503d;
+}

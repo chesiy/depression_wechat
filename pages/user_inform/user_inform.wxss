@@ -1,18 +1,29 @@
 /* pages/user_infrom.wxss */
 
-/*按钮*/
-.user_portrait{
-  width: 20%; 
-  margin-top: 10px; 
-  margin-left: 10px; 
-  border-radius: 10px;
+page{ 
+  height: 100%; 
+ } 
+
+ .user_portrait{
+  width: 100%; 
+  /* margin-top: 10px; 
+  margin-left: 50px;  */
+  justify-content: center;
+  display: flex;
+  align-items: center;
 }
 
+.user_fig{
+  width: 30%;
+  justify-content: center;
+  align-items: center;
+}
+
+/*按钮*/
 .BtnView { 
   width: 100%; 
   height: auto; 
-  /* background-color:#DCDCDC; */
-  margin-top: 0px; 
+  margin-top: 30px; 
   margin-bottom: 0px; 
   padding-bottom: 0px; 
  } 
