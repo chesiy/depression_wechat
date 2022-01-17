@@ -1,0 +1,33 @@
+/* pages/information/information.wxss */
+
+page{
+  height: 100%; 
+}
+.inputView { 
+  /* background-color: #fff;  */
+  line-height: 45px; 
+  border-radius:20px;
+   border:1px solid #999999;
+   padding: 5px;
+   width:80%;
+   margin: 15px 15px 15px 10px; 
+ } 
+
+ .fixView { 
+  /* background-color: #fff;  */
+   padding: 5px;
+   width:80%;
+   margin: 15px 15px 15px 10px; 
+ } 
+
+ .inputLabel {
+    margin: 10px 10px 10px 10px; 
+    color: #545454; 
+    font-size: 14px
+ }
+
+ .title {
+  margin: 10px;
+  font-size: 15pt;
+  color: #2b503d;
+}
