@@ -1,0 +1,36 @@
+/* pages/user_infrom.wxss */
+
+page{ 
+  height: 100%; 
+ } 
+
+ .user_portrait{
+  width: 100%; 
+  padding-top: 30px; 
+  /* margin-left: 50px;  */
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.user_fig{
+  width: 30%;
+  justify-content: center;
+  align-items: center;
+}
+
+/*按钮*/
+.BtnView { 
+  width: 100%; 
+  height: auto; 
+  margin-top: 30px; 
+  margin-bottom: 0px; 
+  padding-bottom: 0px; 
+ } 
+  
+ .Btn { 
+  width: 90%; 
+  margin-top: 10px; 
+  border-radius:10px;
+  padding: 10px;
+ }

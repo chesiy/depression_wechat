@@ -1,4 +1,4 @@
-// pages/about_us/about_us.js
+// pages/user_infrom.js
 Page({
 
   /**
@@ -6,30 +6,6 @@ Page({
    */
   data: {
 
-  },
-
-  informed_consent: function(){
-    wx.navigateTo({
-      url: "./informed_consent/informed_consent"
-    })
-  },
-
-  user_privacy: function(){
-    wx.navigateTo({
-      url: "./user_privacy/user_privacy"
-    })
-  },
-
-  user_protocol: function(){
-    wx.navigateTo({
-      url: "./user_protocol/user_protocol"
-    })
-  },
-
-  common_problem: function(){
-    wx.navigateTo({
-      url: "./common_problem/common_problem"
-    })
   },
 
   /**
@@ -86,5 +62,24 @@ Page({
    */
   onShareAppMessage: function () {
 
-  }
+  },
+
+  information:function(){
+    wx.navigateTo({
+      url: "../information/information"
+    })
+  },
+
+  advice:function(){
+    wx.navigateTo({
+      url: "../advice/advice"
+    })
+  },
+
+  about_us:function(){
+    wx.navigateTo({
+      url: "../about_us/about_us"
+    })
+  },
+
 })

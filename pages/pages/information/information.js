@@ -1,35 +1,56 @@
-// pages/about_us/about_us.js
+// pages/information/information.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    isInput:false,
+    age:'0',
+    gender:'男',
+    profession:'学生',
   },
 
-  informed_consent: function(){
-    wx.navigateTo({
-      url: "./informed_consent/informed_consent"
+  AgeInput: function (e) {
+    //print(this.data.age);
+    this.setData({
+      age: e.detail.value
     })
   },
 
-  user_privacy: function(){
-    wx.navigateTo({
-      url: "./user_privacy/user_privacy"
+  GenderInput: function (e) {
+    //print(this.data.age);
+    this.setData({
+      gender: e.detail.value
     })
   },
 
-  user_protocol: function(){
-    wx.navigateTo({
-      url: "./user_protocol/user_protocol"
+  ProfessionInput: function(e) {
+    this.setData({
+      profession: e.detail.value
     })
   },
 
-  common_problem: function(){
-    wx.navigateTo({
-      url: "./common_problem/common_problem"
+  edit:function(){
+    this.setData({
+      isInput: true
     })
+  },
+
+  save:function(){
+    if( this.data.age==''){
+      this.data.age='0'
+    }
+    if( this.data.age==''){
+      this.data.gender='男'
+    }
+    if( this.data.profession==''){
+      this.data.profession='学生'
+    }
+    this.setData({
+      isInput: false
+    })
+    //post信息至后台
   },
 
   /**

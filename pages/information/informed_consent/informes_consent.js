@@ -1,4 +1,4 @@
-// pages/about_us/about_us.js
+// pages/information/informed_consent/informes_consent.js
 Page({
 
   /**
@@ -6,30 +6,6 @@ Page({
    */
   data: {
 
-  },
-
-  informed_consent: function(){
-    wx.navigateTo({
-      url: "./informed_consent/informed_consent"
-    })
-  },
-
-  user_privacy: function(){
-    wx.navigateTo({
-      url: "./user_privacy/user_privacy"
-    })
-  },
-
-  user_protocol: function(){
-    wx.navigateTo({
-      url: "./user_protocol/user_protocol"
-    })
-  },
-
-  common_problem: function(){
-    wx.navigateTo({
-      url: "./common_problem/common_problem"
-    })
   },
 
   /**
