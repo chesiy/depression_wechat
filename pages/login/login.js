@@ -91,6 +91,7 @@ Page({
                         });
                     }
                 });
+
             } else {
                 // 用户没有授权
                 // 改变 isHide 的值，显示授权页面
@@ -112,6 +113,9 @@ Page({
     that.setData({
       isHide: false
   });
+  wx.navigateTo({
+    url: '/pages/information/information'
+  })
     },
 
   /**

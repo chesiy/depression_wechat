@@ -13,8 +13,8 @@
     </button>
 </view>
  
-<view wx:else>
-  <view class="container" >
+<view wx:else style="background-image: url(../../static/bg/flower.png)">
+  <view class="container">
     <!-- <view class="login-icon"> 
       <image class="login-img" src="../../img/loginLog.jpg"></image> 
     </view>  -->
