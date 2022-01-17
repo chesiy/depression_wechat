@@ -1,8 +1,2 @@
 <!--pages/about_us/about_us.wxml-->
-<view class="title">关于我们</view>
-<view class="BtnView">
-  <button bindtap="informed_consent" >知情同意书</button>
-  <button bindtap="user_privacy">用户隐私</button>
-  <button bindtap="user_protocol">用户服务协议</button>
-  <button bindtap="common_problem" >常见问题</button>
-</view>
+<text>关于我们</text>

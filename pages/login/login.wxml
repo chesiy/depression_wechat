@@ -13,7 +13,7 @@
     </button>
 </view>
  
-<view wx:else style="background-image: url(../../static/bg/flower.png)">
+<view wx:else style="background-image: url(../../static/bg/flower.png); height: 100%">
   <view class="container">
     <!-- <view class="login-icon"> 
       <image class="login-img" src="../../img/loginLog.jpg"></image> 
