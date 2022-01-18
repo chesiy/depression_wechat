@@ -1,4 +1,5 @@
 <!--pages/information/information.wxml-->
+<view  style="background-image: url(../../static/bg/flower.png); height: 100%">
 <view class="title">个人档案信息</view>
 <view>
   <view class="page-section">
@@ -43,5 +44,7 @@
 
 </view>
 
-<button   bindtap="edit" >修改</button>
-<button   bindtap="save"  >保存</button>
+<button   bindtap="edit" class=".Btn">修改</button>
+<button   bindtap="save" class=".Btn" >保存</button>
+
+</view>

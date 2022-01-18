@@ -31,3 +31,10 @@ page{
   font-size: 15pt;
   color: #2b503d;
 }
+
+.Btn { 
+  width: 90%; 
+  margin-top: 10px; 
+  border-radius:10px;
+  padding: 10px;
+ }
