@@ -20,13 +20,6 @@ Page({
       url: '/pages/dialog/dialog'
     })
   },
- 
-  user_info: function(){
-    this.data.button_disabled=true
-    wx.navigateTo({
-      url: '/pages/user_inform/user_inform'
-    })
-  },
 
   bindKeyInput_name: function (e) {
     this.setData({

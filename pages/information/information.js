@@ -9,6 +9,7 @@ Page({
     age:'0',
     gender:'男',
     profession:'学生',
+    marrige: '未婚'
   },
 
   AgeInput: function (e) {
