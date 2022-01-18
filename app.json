@@ -17,5 +17,26 @@
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json",
-  "lazyCodeLoading": "requiredComponents"
+  "lazyCodeLoading": "requiredComponents",
+  "tabBar": {
+    "color": "#aaaaaa", 
+    "selectedColor": "#2E87E4", 
+    "backgroundColor": "#fff",
+    "borderStyle": "black",
+    "position": "bottom",
+    "list": [
+      {
+        "selectedIconPath": "static/icon/homepage.png",  
+        "iconPath": "static/icon/homepage.png",  
+        "pagePath": "pages/login/login", 
+        "text": "首页" 
+      },
+      {
+        "selectedIconPath": "static/icon/mine.png",
+        "iconPath": "static/icon/mine.png",
+        "pagePath": "pages/user_inform/user_inform",
+        "text": "我的"
+      }
+    ]
+  }
 }
